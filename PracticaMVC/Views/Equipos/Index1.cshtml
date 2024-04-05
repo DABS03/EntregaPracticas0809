@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+<form asp-action="CrearEquipos">
+<head>
+    Helpers
+</head>
+<hr />
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top"></div>
+    <div class="container body-content">
+        <br />
+        <label for="Nombre_Usuario">Nombre de usuario</label>
+
+        <input name="txtUserName" class="form-control" id="txtUserName" type="text" value="" />
+        <br />
+        <label for="Conta_Usuario">Contraseña</label>
+        <br />
+        <input name="Contrasena" class="form-control" id="Contrasena" type="password" value="" />
+        <br />
+        <input name="Genero" id="Masculino" type="radio" checked="checked" value="Masculino" />
+        Masculino
+        <input name="Genero" id="Masculino" type="radio" value="Femenino" />
+        Femenino
+        <br />
+        <br />
+        <label for="direcc">Dirección</label>
+        <br />
+        <textarea name="Direccion" class="form-control" id="idDireccion" rows="2" cols="20">Ingrese su dirección</textarea>
+        <br />
+        <label for="direcc">Pasatiempos</label>
+        <input name="pas1" id="Bailar" type="checkbox" value="Bailar" />
+        Bailar
+        <input name="pas2" id="Correr" type="checkbox" value="Correr" />
+        Correr
+        <input name="pas3" id="Escalar" type="checkbox" value="Escalar" />
+        Escalar
+        <input name="pas4" id="Peliculas" type="checkbox" value="Peliculas" />
+        Peliculas
+        <br />
+        <br />
+        <label for="direcc">Curso</label>
+        <br />
+        <select name="ddlCurso" id="ddlCurso">
+            <option value="">--* Seleccionar curso ---</option>
+            <option selected="selected">POO</option>
+            <option>TW</option>
+            <option>MAT3</option>
+            <option>FIS1</option>
+        </select>
+        <br />
+        <label for="direcc">Conocimientos</label>
+        <br />
+        <select name="Seleccionar habilidades" id="Seleccionar_habilidades" multiple="multiple">
+            <option value="1">C#</option>
+            <option value="2">JAVA</option>
+            <option value="3">ASP.NET</option>
+            <option value="4">Azure</option>
+        </select>
+        <br />
+        <label for="Seleccione:_">Seleccione</label>
+        <br />
+        <a href="/Clientes/Alta">Alta de clientes</a>
+        <br />
+        <br />
+
+        <hr />
+        <input name="Enviar" id="EnviarDatos" type="button" value="Enviar Datos" />
+        <hr />
+        <footer></footer>
+    </div>
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+</body>
+</form>
